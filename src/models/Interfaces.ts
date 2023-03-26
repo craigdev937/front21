@@ -1,5 +1,5 @@
-export interface ITheme {
-    theme: boolean
+export interface IDark {
+    darkmode: boolean
 };
 
 

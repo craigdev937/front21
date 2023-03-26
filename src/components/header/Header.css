@@ -1,0 +1,27 @@
+.header {
+    padding: 11px 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--elements);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.header__button {
+    padding: 16px 28px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+

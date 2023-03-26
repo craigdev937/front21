@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { ThemeReducer } from "./ThemeSlice";
+import { DarkReducer } from "./DarkSlice";
 
 export const Reducer = configureStore({
     reducer: {
-        theme: ThemeReducer,
+        darkmode: DarkReducer,
         countries: () => "Countries REST API!"
     },
 });
