@@ -2,7 +2,6 @@ import React from "react";
 import { createBrowserRouter, 
     RouterProvider } from "react-router-dom";
 import { useAppSelector } from "../global/Hooks";
-import { Header } from "../components/header/Header";
 import { NotFound } from "../components/NotFound";
 import { Home } from "../pages/Home";
 import { Country } from "../pages/Country";
@@ -28,7 +27,6 @@ export const Main = () => {
             className={`theme ${darkmode && "darkmode"}`}
         >
             <React.Fragment>
-                <Header />
                 <RouterProvider router={ReactRouter} />
             </React.Fragment>
         </aside>
