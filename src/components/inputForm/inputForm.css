@@ -1,0 +1,13 @@
+.input {
+    background: var(--input);
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 26px;
+    width: 343px;
+}
+
+
+
+
