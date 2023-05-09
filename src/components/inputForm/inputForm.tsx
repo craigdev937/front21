@@ -2,7 +2,6 @@ import React from "react";
 import "./inputForm.css";
 import { FcSearch } from "react-icons/fc";
 import { useAppSelector, useAppDispatch } from "../../global/Hooks";
-import { API } from "../../global/FetchAPI";
 
 export const InputForm = () => {
     const [name, setName] = React.useState("");
@@ -14,25 +13,16 @@ export const InputForm = () => {
         setName(event.target.value);
     };
 
-    const handleSubmit = 
-    (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        dispatch(API.fetchAllByName(name));
-        setName("");
-    };
+    // const handleSubmit = 
+    // (event: React.FormEvent<HTMLFormElement>) => {
+    //     event.preventDefault();
+        
+    //     setName("");
+    // };
 
     return (
         <React.Fragment>
-            <section className="input">
-                <form onSubmit={handleSubmit}>
-                    <FcSearch />
-                    <input 
-                        className="input__item"
-                        placeholder="Search for a Country..."
-                        onChange={handleChange}
-                    />
-                </form>
-            </section>
+            <h1>Input Form</h1>
         </React.Fragment>
     );
 };

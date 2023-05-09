@@ -1,3 +1,10 @@
+export interface IFilter {
+    filters: {
+        search: string,
+        region: string
+    }
+};
+
 export interface IDark {
     darkmode: boolean
 };
@@ -49,12 +56,7 @@ export interface ICountry {
         number
     ],
     "landlocked": false,
-    "borders": [
-        string,
-        string,
-        string,
-        string
-    ],
+    "borders": string[],
     "area": number,
     "demonyms": {
         "eng": {
@@ -99,10 +101,7 @@ export interface ICountry {
     },
     "startOfWeek": string,
     "capitalInfo": {
-        "latlng": [
-            number,
-            number
-        ]
+        "latlng": number[]
     }
 };
 
