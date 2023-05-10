@@ -22,7 +22,14 @@ export const InputForm = () => {
 
     return (
         <React.Fragment>
-            <h1>Input Form</h1>
+            <section className="input">
+                <form action="">
+                    <input 
+                        type="text" 
+                        placeholder="Search for a Country"
+                    />
+                </form>
+            </section>
         </React.Fragment>
     );
 };

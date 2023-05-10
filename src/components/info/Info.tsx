@@ -17,21 +17,22 @@ export const Info = () => {
     };
 
     return (
-        <React.Fragment>
+        <section className="info">
             {isLoading ? (
                 <h1>Loading...</h1>
             ) : (
                 data!.map((country, index) => (
                     <Link
-                        className="country-card"
+                        className="info__card"
                         key={index}
                         to={`/${country.cioc}`}
                     >
                         <img
+                            className="info__image"
                             alt={country.flags.alt}
                             src={country.flags.png}
                         />
-                        <aside className="country-content">
+                        <aside className="info__content">
                             <h3>{country.name.common}</h3>
                             <p>
                                 Population: <span>{country.population}</span>
@@ -46,7 +47,7 @@ export const Info = () => {
                     </Link>
                 ))
             )}
-        </React.Fragment>
+        </section>
     );
 };
 
