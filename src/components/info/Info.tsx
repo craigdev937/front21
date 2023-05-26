@@ -1,4 +1,3 @@
-import React from "react";
 import "./Info.css";
 import { Link } from "react-router-dom";
 import { CountryAPI } from "../../global/CountryAPI";

@@ -3,23 +3,23 @@
     height: 100%;
     padding: 0 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 2rem;
     background: var(--background);
 }
 
 .info__card {
-    /* max-width: 20%;
-    background-color: wheat;
-    margin-right: 4rem;
-    margin-bottom: 8rem;
+    max-width: 100%;
+    background-color: var(--light-mode-background);
+    margin-bottom: 4rem;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 5px 5px 10px 0px #dfd5d5; */
+    box-shadow: 5px 5px 10px 0px #dfd5d5;
 }
 
 .info__image {
-    
+    width: 100%;
+    height: auto;
 }
 
 .info__content {
